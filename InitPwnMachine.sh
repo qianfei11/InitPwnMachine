@@ -4,21 +4,21 @@ sudo apt update
 # Remove useless softwares
 sudo apt purge libreoffice-common unity-webapps-common thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg aisleriot gnome-mines cheese gnome-sudoku transmission-common gnome-orca webbrowser-app landscape-client-ui-install deja-dup
 # Set github hosts
-wget 
+wget https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/GithubHosts
 cat GithubHosts >> sudo tee /etc/hosts
 rm -f GithubHosts
 # Install some basic tools
 sudo apt install curl wget ipython
 # Install vim
 sudo apt install vim
-wget -c  -O ~/.vimrc
+wget -c https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/.vimrc -O ~/.vimrc
 # Install tmux
 sudo apt install tmux
-wget -c  -O ~/.tmux.conf
+wget -c https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/.tmux.conf -O ~/.tmux.conf
 # Install pwntools
 sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
 sudo pip install --upgrade pip
-wget 
+wget https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/pip
 cat pip > sudo tee /usr/bin/pip
 rm -f pip
 sudo pip install --upgrade pwntools
