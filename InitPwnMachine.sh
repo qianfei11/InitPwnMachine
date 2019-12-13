@@ -19,7 +19,7 @@ sudo wget https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/pip 
 sudo pip install --upgrade pwntools
 # Install oh-my-zsh
 sudo apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Install x86 environment
 sudo apt install gcc-multilib g++-multilib
 sudo dpkg --add-architecture i386
