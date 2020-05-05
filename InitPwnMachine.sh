@@ -1,4 +1,5 @@
-# Based on Ubuntu-16.04
+# Tested on Ubuntu-16.04
+sudo sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 # Update
 sudo apt update
 # Remove useless softwares

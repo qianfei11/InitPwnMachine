@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # Apt packages
-RUN sed -i s@/archive.ubuntu.com/@/mirrors.tuna.tsinghua.edu.cn/@g /etc/apt/sources.list
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 RUN apt-get clean
 
 RUN dpkg --add-architecture i386 && apt-get update && \
