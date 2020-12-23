@@ -14,11 +14,11 @@ sudo apt install tmux
 wget -c https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/.tmux.conf -O ~/.tmux.conf
 # Install pwntools
 sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
-pip install --user --upgrade pip
+pip install --user pip -U
 sudo cp /usr/bin/pip /usr/bin/pip.bak
 wget https://raw.githubusercontent.com/qianfei11/InitPwnMachine/master/pip
 sudo mv pip /usr/bin/pip
-pip install --user --upgrade pwntools
+pip install --user pwntools -U
 # Install oh-my-zsh
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
